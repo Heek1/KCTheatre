@@ -1,0 +1,47 @@
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+a {
+    color: #c9a84c;
+}
+
+.btn-primary {
+    color: #0d0d0d;
+    background-color: #c9a84c;
+    border-color: #a8873a;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #0d0d0d;
+    background-color: #c9a84c;
+    border-color: #a8873a;
+}
+
+.border-top {
+    border-top: 1px solid #2e2010;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #2e2010;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .2);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
