@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 
 
-namespace KCDemo.Controllers;
+namespace TheatreDemo.Controllers;
 
 public class HomeController : Controller
 {
@@ -11,8 +11,15 @@ public class HomeController : Controller
     [Authorize]
     public IActionResult Catalog() => View();
 
-    [Authorize]
     public IActionResult Profile() => View();
+
+    [Authorize(Roles = "admin")]
+    public IActionResult Admin() => View();
+
+    [Authorize(Roles = "guest")]
+    public IActionResult Guest() => View();
+
+    public IActionResult AccessDenied() => View();
 
     public IActionResult Logout() => SignOut("Cookies", "OpenIdConnect");
 }

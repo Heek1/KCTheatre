@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Доступ заборонено";
+}
+
+<div class="d-flex flex-column align-items-center justify-content-center" style="min-height:60vh; text-align:center;">
+    <div style="font-size:4rem; margin-bottom:1rem;">🔒</div>
+    <h2 style="color:#2d3748; font-weight:700;">Доступ заборонено</h2>
+    <p style="color:#718096; max-width:360px; margin-top:0.5rem;">
+        У вас недостатньо прав для перегляду цієї сторінки.
+        Зверніться до адміністратора, якщо це помилка.
+    </p>
+    <a asp-controller="Home" asp-action="Index" class="btn-t-primary text-decoration-none px-4 py-2 d-inline-block mt-3">
+        ← На головну
+    </a>
+</div>

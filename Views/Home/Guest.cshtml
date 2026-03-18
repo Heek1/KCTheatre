@@ -1,0 +1,37 @@
+@{
+    ViewData["Title"] = "Гостьова сторінка";
+}
+
+<h1 class="page-title">🎫 Гостьова сторінка</h1>
+<p class="page-subtitle">Доступна лише для ролі <strong style="color:#276749;">guest</strong>.</p>
+
+<div class="row g-3">
+    <div class="col-md-5">
+        <div class="t-card p-4">
+            <h6 class="fw-bold mb-3" style="color:#2d3748;">Привіт, гостю!</h6>
+            <hr />
+            <p>Ви увійшли як: <strong style="color:#276749;">@User.Identity?.Name</strong></p>
+            <p style="color:#718096; font-size:0.9rem;">
+                Як гість, ви маєте обмежений доступ до платформи.
+                Для повного доступу до репертуару зверніться до адміністратора.
+            </p>
+            <a asp-controller="Home" asp-action="Index" class="btn-t-primary text-decoration-none px-3 py-2 d-inline-block mt-2">
+                ← На головну
+            </a>
+        </div>
+    </div>
+    <div class="col-md-7">
+        <div class="t-card p-4">
+            <h6 class="fw-bold mb-3" style="color:#2d3748;">Що вам доступно</h6>
+            <hr />
+            <ul style="color:#4a5568; padding-left:1.2rem; line-height:2;">
+                <li>Перегляд анонсів вистав</li>
+                <li>Ознайомлення з репертуаром</li>
+                <li>Перегляд трейлерів</li>
+            </ul>
+            <div style="background:#f0fff4; border:1px solid #c6f6d5; border-radius:8px; padding:0.75rem 1rem; font-size:0.85rem; color:#276749;">
+                💡 Для придбання квитків потрібна повна реєстрація.
+            </div>
+        </div>
+    </div>
+</div>
